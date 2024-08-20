@@ -1,0 +1,8 @@
+./myhh.c: ../neuron_mechanisms/myhh.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../neuron_mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "myhh.mod" -o "/Users/michaeldeistler/Documents/phd/jaxley_experiments/paper/fig2_demonstration/arm64")
+
+./myhh.o: ./myhh.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../neuron_mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+

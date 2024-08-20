@@ -1,0 +1,89 @@
+project: jaxley
+
+method: random
+
+metric:
+  goal: minimize
+  name: final_loss
+
+# If train is going to access, has to be here I guess
+parameters:
+  train_params:
+    parameters:
+      batch_size: 
+        values: [4, 8, 16]
+      train_seed: 
+        distribution: int_uniform
+        max: 1000
+        min: 0
+      checkpoint_levels: 
+        value: 3
+      lowers:
+        parameters:
+          IonotropicSynapse_gS: 
+            value: 1.0e-10
+          input_weights: 
+            value: -0.1
+      lr: 
+        value: 0.01
+      n_epochs: 
+        value: 2000
+      trainables:
+        value:
+          - IonotropicSynapse_gS
+      uppers:
+        parameters:
+          IonotropicSynapse_gS: 
+            value: 0.01
+          input_weights: 
+            value: 0.1
+  RNN_params:
+    parameters:
+      RNN_seed: 
+        value: 3
+      in_conn_prob: 
+        value: 1
+      init_gain: 
+        value: 5.0
+      inp_scale: 
+        value: 0.1
+      k_minus: 
+        value: 1.0
+      n_inh: 
+        values: [5, 10]
+      n_out: 
+        value: 2
+      n_rec:
+        value: 20
+      out_conn_prob: 
+        value: 1
+      out_k_minus: 
+        value: 0.025
+      out_scale: 
+        value: 1.0
+      rec_conn_prob: 
+        value: 0.2
+  task_params:
+    parameters:
+      dt: 
+        value: 0.025
+      loss: 
+        value: CE
+      response_length: 
+        value: 20
+      response_time: 
+        value: 500
+      total_time: 
+        value: 520
+      stim_freq_max: 
+        value: 2500
+      stim_mean:
+        value:
+        - -0.005
+        - 0.005
+      stim_mean_std: 
+        value: 0.0002
+      stim_std: 
+        value: 0.05
+      target_pol: 
+        value: 0

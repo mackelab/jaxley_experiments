@@ -1,0 +1,7 @@
+defaults:
+  - submitit_slurm
+
+timeout_min: 60
+mem_gb: 200
+partition: a100-galvani
+gres: a100:1

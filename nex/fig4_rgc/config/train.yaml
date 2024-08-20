@@ -1,0 +1,31 @@
+defaults:
+  - _self_
+
+lr: 0.01
+momentum: 0.5
+iterations: 1000
+reduce_lr_every: 350
+reduce_lr_by: 10.0
+beta: 0.99
+soma_radius: 7.5
+output_scale: 40.0
+weight_init: "random"
+batchsize: 256
+rec_ids: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+num_datapoints_per_scanfield: 1024
+val_frac: 0.2
+test_num: 128
+vis: true
+seed_weights: 1
+seed_membrane_conds: 0
+seed_tf_dataloader: 0
+seed_tf_train_loop: 0
+seed_ruler: 0
+eval_every_nth_batch: 100
+
+hydra:
+  run:
+    dir: results/train_runs/${now:%Y_%m_%d}__${now:%H_%M_%S}/0
+  sweep:
+    dir: results/train_runs/${now:%Y_%m_%d}__${now:%H_%M_%S}_m
+    subdir: ${hydra.job.num}
