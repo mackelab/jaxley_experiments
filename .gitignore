@@ -1,4 +1,5 @@
 results/
+morphologies/
 mnist/
 .DS_Store
 **/*.png
