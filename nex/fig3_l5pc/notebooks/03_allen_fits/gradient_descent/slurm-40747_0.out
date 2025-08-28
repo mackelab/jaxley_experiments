@@ -1,0 +1,100 @@
+Hello from task 0
+2025-03-05 12:10:14,264 - __main__ - INFO - Start run with seed 0
+2025-03-05 12:10:14,264 - __main__ - INFO - Observation: allen
+2025-03-05 12:10:14,264 - __main__ - INFO - Number of particles: 1000
+2025-03-05 12:10:14,264 - __main__ - INFO - Steps: 50
+2025-03-05 12:10:14,264 - __main__ - INFO - Learning rate: 0.0005
+2025-03-05 12:10:14,264 - __main__ - INFO - Momentum: 0.0
+2025-03-05 12:10:14,264 - __main__ - INFO - Cost fn power: 1.0
+2025-03-05 12:10:14,264 - __main__ - INFO - t_max: 199.5
+2025-03-05 12:10:14,264 - __main__ - INFO - Setup: 485574832
+2025-03-05 12:10:14,264 - __main__ - INFO - JAX version: 0.4.38
+2025-03-05 12:10:14,264 - __main__ - INFO - Device: [CudaDevice(id=0)]
+2025-03-05 12:10:14,264 - __main__ - INFO - Start run with seed 0
+2025-03-05 12:10:14,264 - __main__ - INFO - Building cell and loading data...
+2025-03-05 12:10:14,264 - __main__ - INFO - Observation: allen
+2025-03-05 12:10:14,264 - __main__ - INFO - Setup: 485574832
+/home/macke/mdeistler57/.conda/envs/jaxley/lib/python3.12/site-packages/jaxley/utils/swc.py:33: UserWarning: Found a soma which consists of a single traced point. `Jaxley` interprets this soma as a spherical compartment with radius specified in the SWC file, i.e. with surface area 4*pi*r*r.
+  warn(
+dt_difference 5.0
+Amplitude stimulus: 0.33000001311302185
+Added 1 external_states. See `.externals` for details.
+Added 1 recordings. See `.recordings` for details.
+2025-03-05 12:10:30,268 - __main__ - INFO - Building prior and log likelihood function...
+Number of parameters: 25
+2025-03-05 12:10:31,103 - __main__ - INFO - Running Gradient Descent...
+2025-03-05 12:10:32,405 - __main__ - INFO - opt_params.shape (1000, 25)
+2025-03-05 12:14:32.633234: E external/xla/xla/service/slow_operation_alarm.cc:73] 
+********************************
+[Compiling module jit_scaled_loss] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+2025-03-05 12:16:08.781972: E external/xla/xla/service/slow_operation_alarm.cc:140] The operation took 3m36.148819319s
+
+********************************
+[Compiling module jit_scaled_loss] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+2025-03-05 12:19:00,297 - __main__ - INFO - Epoch 0 Loss: Avg 526.8174747672716, Med 468.52548107935166, Min 139.46970328460097
+2025-03-05 12:21:22,790 - __main__ - INFO - Epoch 1 Loss: Avg 483.09149533528625, Med 428.3229988009333, Min 195.6484815311795
+2025-03-05 12:23:44,816 - __main__ - INFO - Epoch 2 Loss: Avg 452.8629147578472, Med 411.1111960450872, Min 153.08946928797738
+2025-03-05 12:26:07,046 - __main__ - INFO - Epoch 3 Loss: Avg 426.5168762790463, Med 388.87682830524113, Min 182.75144485616167
+2025-03-05 12:28:29,470 - __main__ - INFO - Epoch 4 Loss: Avg 409.417817253141, Med 377.3513794066493, Min 175.88223038941507
+2025-03-05 12:30:51,563 - __main__ - INFO - Epoch 5 Loss: Avg 392.154795682575, Med 364.7548511856083, Min 192.68588441136544
+2025-03-05 12:33:13,752 - __main__ - INFO - Epoch 6 Loss: Avg 384.5945400624772, Med 355.32485627914855, Min 193.5651727749955
+2025-03-05 12:35:36,047 - __main__ - INFO - Epoch 7 Loss: Avg 375.9351730354136, Med 347.9022229600156, Min 150.7560662406688
+2025-03-05 12:37:58,011 - __main__ - INFO - Epoch 8 Loss: Avg 366.39442869155585, Med 338.04296368389146, Min 132.1682694235021
+2025-03-05 12:40:20,356 - __main__ - INFO - Epoch 9 Loss: Avg 359.70398492748126, Med 333.56734945328566, Min 139.86419862630996
+2025-03-05 12:42:42,490 - __main__ - INFO - Epoch 10 Loss: Avg 350.83668388051655, Med 323.96727877333905, Min 171.94223136183993
+2025-03-05 12:45:04,661 - __main__ - INFO - Epoch 11 Loss: Avg 347.9394381847737, Med 322.4793648156431, Min 114.44869006972922
+2025-03-05 12:47:27,082 - __main__ - INFO - Epoch 12 Loss: Avg 341.3663060895079, Med 315.8607302944309, Min 163.68495704876565
+2025-03-05 12:49:49,165 - __main__ - INFO - Epoch 13 Loss: Avg 336.0227550160315, Med 308.3413555490957, Min 111.57533491255137
+2025-03-05 12:52:11,221 - __main__ - INFO - Epoch 14 Loss: Avg 331.74895499658976, Med 308.70552291383774, Min 137.93914457152553
+2025-03-05 12:54:33,266 - __main__ - INFO - Epoch 15 Loss: Avg 328.0663576307299, Med 302.4786602299874, Min 189.51959272029754
+2025-03-05 12:56:55,403 - __main__ - INFO - Epoch 16 Loss: Avg 321.53922957575867, Med 298.3078716437676, Min 156.23484564058614
+2025-03-05 12:59:17,489 - __main__ - INFO - Epoch 17 Loss: Avg 321.01041524820727, Med 298.7246119721999, Min 181.78553981129184
+2025-03-05 13:01:39,818 - __main__ - INFO - Epoch 18 Loss: Avg 316.2320462255373, Med 295.97726326239626, Min 138.60364869100877
+2025-03-05 13:04:01,895 - __main__ - INFO - Epoch 19 Loss: Avg 314.43055368049187, Med 293.67897913139973, Min 174.3408345242203
+2025-03-05 13:06:24,232 - __main__ - INFO - Epoch 20 Loss: Avg 314.578758725128, Med 292.4069853102559, Min 162.1420816804202
+2025-03-05 13:08:46,313 - __main__ - INFO - Epoch 21 Loss: Avg 311.17390996063835, Med 289.3683678746241, Min 131.33340711538565
+2025-03-05 13:11:08,818 - __main__ - INFO - Epoch 22 Loss: Avg 309.2710862783774, Med 290.1657756543303, Min 175.31775349743995
+2025-03-05 13:13:30,867 - __main__ - INFO - Epoch 23 Loss: Avg 309.3848659104708, Med 287.21414533168485, Min 166.7378270289906
+2025-03-05 13:15:53,107 - __main__ - INFO - Epoch 24 Loss: Avg 306.2882670897988, Med 283.8770912635248, Min 150.28712450806253
+2025-03-05 13:18:15,166 - __main__ - INFO - Epoch 25 Loss: Avg 306.4401911843263, Med 283.5650945686609, Min 114.66802004216518
+2025-03-05 13:20:37,395 - __main__ - INFO - Epoch 26 Loss: Avg 304.20177278625476, Med 281.0037515532744, Min 156.12488247461826
+2025-03-05 13:22:59,441 - __main__ - INFO - Epoch 27 Loss: Avg 304.56265030621597, Med 281.4723826300292, Min 176.5714284998488
+2025-03-05 13:25:21,640 - __main__ - INFO - Epoch 28 Loss: Avg 303.088181290661, Med 279.32378491498514, Min 173.70112366979114
+2025-03-05 13:27:43,317 - __main__ - INFO - Epoch 29 Loss: Avg 301.9585512049003, Med 280.68073944300085, Min 171.56692102132283
+2025-03-05 13:30:05,805 - __main__ - INFO - Epoch 30 Loss: Avg 299.04843373814293, Med 277.9776479363784, Min 167.7181758555126
+2025-03-05 13:32:27,808 - __main__ - INFO - Epoch 31 Loss: Avg 299.1122450728471, Med 277.57926975930343, Min 170.55130010150847
+2025-03-05 13:34:49,992 - __main__ - INFO - Epoch 32 Loss: Avg 297.5931863934013, Med 275.53819703944356, Min 145.2394133553362
+2025-03-05 13:37:11,741 - __main__ - INFO - Epoch 33 Loss: Avg 295.91558432472107, Med 274.79774603979024, Min 128.87710357076898
+2025-03-05 13:39:34,065 - __main__ - INFO - Epoch 34 Loss: Avg 296.3556871059687, Med 273.04075258164875, Min 177.80141727329678
+2025-03-05 13:41:56,026 - __main__ - INFO - Epoch 35 Loss: Avg 295.6094508677435, Med 274.08792008976366, Min 160.56460979797762
+2025-03-05 13:44:18,324 - __main__ - INFO - Epoch 36 Loss: Avg 295.3837050577152, Med 274.92483557650445, Min 167.01098632727863
+2025-03-05 13:46:40,587 - __main__ - INFO - Epoch 37 Loss: Avg 293.65290377363584, Med 271.7715508038002, Min 134.94439444911805
+2025-03-05 13:49:02,531 - __main__ - INFO - Epoch 38 Loss: Avg 295.1667398415494, Med 274.3181726602549, Min 163.4144857664954
+2025-03-05 13:51:24,763 - __main__ - INFO - Epoch 39 Loss: Avg 294.94102644611473, Med 270.839940751313, Min 143.6506949758568
+2025-03-05 13:53:46,731 - __main__ - INFO - Epoch 40 Loss: Avg 294.61099216344047, Med 271.0221575143909, Min 137.84642496147896
+2025-03-05 13:56:08,641 - __main__ - INFO - Epoch 41 Loss: Avg 293.94681387048706, Med 270.2684943419891, Min 170.8340518585878
+2025-03-05 13:58:30,937 - __main__ - INFO - Epoch 42 Loss: Avg 293.39258025466034, Med 268.67036352605953, Min 108.85393962012628
+2025-03-05 14:00:53,185 - __main__ - INFO - Epoch 43 Loss: Avg 291.912791319562, Med 265.8193416379699, Min 177.26622890864562
+2025-03-05 14:03:15,221 - __main__ - INFO - Epoch 44 Loss: Avg 291.333428378343, Med 268.13718348136945, Min 142.59635111088798
+2025-03-05 14:05:37,487 - __main__ - INFO - Epoch 45 Loss: Avg 291.8160614912877, Med 266.1673296479134, Min 165.14983137280055
+2025-03-05 14:07:59,520 - __main__ - INFO - Epoch 46 Loss: Avg 292.04976549390864, Med 266.0751000379624, Min 144.82666801182134
+2025-03-05 14:10:21,758 - __main__ - INFO - Epoch 47 Loss: Avg 291.075680806727, Med 264.322110682686, Min 114.44859545078927
+2025-03-05 14:12:43,767 - __main__ - INFO - Epoch 48 Loss: Avg 290.1649893876818, Med 262.856272178356, Min 164.08117814827776
+2025-03-05 14:15:05,715 - __main__ - INFO - Epoch 49 Loss: Avg 288.0398117100437, Med 260.4714283260704, Min 175.92515024652457
+2025-03-05 14:15:06,010 - __main__ - INFO - 10 best losses: [108.85393962 114.44859545 114.44869007 131.33340712 137.84642496
+ 138.60364869 139.46970328 142.59635111 142.81347316 143.65069498]
+/home/macke/mdeistler57/.conda/envs/jaxley/lib/python3.12/site-packages/jaxley/utils/swc.py:33: UserWarning: Found a soma which consists of a single traced point. `Jaxley` interprets this soma as a spherical compartment with radius specified in the SWC file, i.e. with surface area 4*pi*r*r.
+  warn(
+dt_difference 5.0
+Amplitude stimulus: 0.33000001311302185
+Added 1 external_states. See `.externals` for details.
+Added 1 recordings. See `.recordings` for details.
+2025-03-05 14:16:57,837 - __main__ - INFO - Minimal error: 28.8114
+2025-03-05 14:16:57,837 - __main__ - INFO - ===========
+2025-03-05 14:16:57,837 - __main__ - INFO - Error in spike_count: 1.0000
+2025-03-05 14:16:57,837 - __main__ - INFO - Error in first_spike_time: 5.0500
+2025-03-05 14:16:57,837 - __main__ - INFO - Error in second_spike_time: 5.2750
+2025-03-05 14:16:57,837 - __main__ - INFO - Error in first_spike_amp: 2.7214
+2025-03-05 14:16:57,837 - __main__ - INFO - Error in second_spike_amp: 0.4399

@@ -1,0 +1,58 @@
+Hello from task 42
+2025-03-12 14:18:42,653 - __main__ - INFO - Start run with seed 42
+2025-03-12 14:18:42,653 - __main__ - INFO - Observation: allen
+2025-03-12 14:18:42,653 - __main__ - INFO - Steps: 10
+2025-03-12 14:18:42,653 - __main__ - INFO - Momentum: 0.0
+2025-03-12 14:18:42,653 - __main__ - INFO - Cost fn power: 1.0
+2025-03-12 14:18:42,653 - __main__ - INFO - t_max: 199.5
+2025-03-12 14:18:42,653 - __main__ - INFO - Setup: 485574832
+2025-03-12 14:18:42,653 - __main__ - INFO - JAX version: 0.4.38
+2025-03-12 14:18:42,653 - __main__ - INFO - Device: [CudaDevice(id=0)]
+2025-03-12 14:18:42,653 - __main__ - INFO - Start run with seed 42
+2025-03-12 14:18:42,653 - __main__ - INFO - Building cell and loading data...
+2025-03-12 14:18:42,653 - __main__ - INFO - Observation: allen
+2025-03-12 14:18:42,653 - __main__ - INFO - Setup: 485574832
+/home/macke/mdeistler57/.conda/envs/jaxley/lib/python3.12/site-packages/jaxley/utils/swc.py:33: UserWarning: Found a soma which consists of a single traced point. `Jaxley` interprets this soma as a spherical compartment with radius specified in the SWC file, i.e. with surface area 4*pi*r*r.
+  warn(
+dt_difference 5.0
+Amplitude stimulus: 0.33000001311302185
+Added 1 external_states. See `.externals` for details.
+Added 1 recordings. See `.recordings` for details.
+2025-03-12 14:18:56,273 - __main__ - INFO - Building prior and log likelihood function...
+Number of parameters: 25
+2025-03-12 14:18:56,971 - __main__ - INFO - Running Gradient Descent...
+2025-03-12 14:18:58,075 - __main__ - INFO - opt_params.shape (10, 25)
+2025-03-12 14:22:37.171027: E external/xla/xla/service/slow_operation_alarm.cc:73] 
+********************************
+[Compiling module jit_scaled_loss] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+2025-03-12 14:23:55.531667: E external/xla/xla/service/slow_operation_alarm.cc:140] The operation took 3m18.360745048s
+
+********************************
+[Compiling module jit_scaled_loss] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+2025-03-12 14:25:48,138 - __main__ - INFO - Epoch 0 Loss: Avg 519.5478067445243, Med 427.2668232640469, Min 312.6013130481924
+2025-03-12 14:27:20,011 - __main__ - INFO - Epoch 1 Loss: Avg 510.6718400885651, Med 420.52578597428834, Min 317.7080913866955
+2025-03-12 14:28:51,618 - __main__ - INFO - Epoch 2 Loss: Avg 451.20172419468764, Med 416.41822818287807, Min 192.97750061728536
+2025-03-12 14:30:23,127 - __main__ - INFO - Epoch 3 Loss: Avg 499.1010700733157, Med 366.62586479311886, Min 286.2010117524334
+2025-03-12 14:31:54,503 - __main__ - INFO - Epoch 4 Loss: Avg 412.4488267899063, Med 357.01439821333395, Min 231.96681591995159
+2025-03-12 14:33:25,863 - __main__ - INFO - Epoch 5 Loss: Avg 391.78850828905297, Med 334.9595536827123, Min 220.49451703808117
+2025-03-12 14:34:57,250 - __main__ - INFO - Epoch 6 Loss: Avg 386.29020308481813, Med 323.91267802759205, Min 241.83840035816203
+2025-03-12 14:36:28,614 - __main__ - INFO - Epoch 7 Loss: Avg 384.1129137637463, Med 327.787639797712, Min 212.56621595707188
+2025-03-12 14:38:00,219 - __main__ - INFO - Epoch 8 Loss: Avg 359.20091272909616, Med 304.1395625982246, Min 238.15221107773553
+2025-03-12 14:39:31,610 - __main__ - INFO - Epoch 9 Loss: Avg 372.6210750205583, Med 315.3310331909145, Min 198.5406768344528
+2025-03-12 14:39:31,677 - __main__ - INFO - 10 best losses: [192.97750062 237.97428061 239.69133129 265.09845479 282.18146614
+ 301.65166051 306.63365006 344.65260461 478.29636576 644.62804684]
+/home/macke/mdeistler57/.conda/envs/jaxley/lib/python3.12/site-packages/jaxley/utils/swc.py:33: UserWarning: Found a soma which consists of a single traced point. `Jaxley` interprets this soma as a spherical compartment with radius specified in the SWC file, i.e. with surface area 4*pi*r*r.
+  warn(
+dt_difference 5.0
+Amplitude stimulus: 0.33000001311302185
+Added 1 external_states. See `.externals` for details.
+Added 1 recordings. See `.recordings` for details.
+2025-03-12 14:40:38,916 - __main__ - INFO - Minimal error: 87.3369
+2025-03-12 14:40:38,916 - __main__ - INFO - ===========
+2025-03-12 14:40:38,916 - __main__ - INFO - Error in spike_count: 5.0000
+2025-03-12 14:40:38,916 - __main__ - INFO - Error in first_spike_time: 4.8000
+2025-03-12 14:40:38,916 - __main__ - INFO - Error in second_spike_time: 22.9250
+2025-03-12 14:40:38,916 - __main__ - INFO - Error in first_spike_amp: 4.6419
+2025-03-12 14:40:38,916 - __main__ - INFO - Error in second_spike_amp: 2.2450

@@ -1,0 +1,49 @@
+Hello from task 42
+2025-03-12 14:18:42,653 - __main__ - INFO - Start run with seed 42
+2025-03-12 14:18:42,653 - __main__ - INFO - Observation: allen
+2025-03-12 14:18:42,653 - __main__ - INFO - Steps: 10
+2025-03-12 14:18:42,653 - __main__ - INFO - Momentum: 0.0
+2025-03-12 14:18:42,653 - __main__ - INFO - Cost fn power: 1.0
+2025-03-12 14:18:42,653 - __main__ - INFO - t_max: 199.5
+2025-03-12 14:18:42,653 - __main__ - INFO - Setup: 480353286
+2025-03-12 14:18:42,653 - __main__ - INFO - JAX version: 0.4.38
+2025-03-12 14:18:42,653 - __main__ - INFO - Device: [CudaDevice(id=0)]
+2025-03-12 14:18:42,653 - __main__ - INFO - Start run with seed 42
+2025-03-12 14:18:42,653 - __main__ - INFO - Building cell and loading data...
+2025-03-12 14:18:42,653 - __main__ - INFO - Observation: allen
+2025-03-12 14:18:42,653 - __main__ - INFO - Setup: 480353286
+/home/macke/mdeistler57/.conda/envs/jaxley/lib/python3.12/site-packages/jaxley/utils/swc.py:33: UserWarning: Found a soma which consists of a single traced point. `Jaxley` interprets this soma as a spherical compartment with radius specified in the SWC file, i.e. with surface area 4*pi*r*r.
+  warn(
+dt_difference 5.0
+Amplitude stimulus: 0.26999998092651367
+Added 1 external_states. See `.externals` for details.
+Added 1 recordings. See `.recordings` for details.
+2025-03-12 14:18:54,477 - __main__ - INFO - Building prior and log likelihood function...
+Number of parameters: 25
+2025-03-12 14:18:55,183 - __main__ - INFO - Running Gradient Descent...
+2025-03-12 14:18:56,339 - __main__ - INFO - opt_params.shape (10, 25)
+2025-03-12 14:23:13,249 - __main__ - INFO - Epoch 0 Loss: Avg 493.9473425247559, Med 414.2928352773082, Min 226.08885677137536
+2025-03-12 14:24:16,808 - __main__ - INFO - Epoch 1 Loss: Avg 328.7408046616528, Med 271.6674294054262, Min 222.3392814231174
+2025-03-12 14:25:20,232 - __main__ - INFO - Epoch 2 Loss: Avg 330.89171136667164, Med 263.11622864941967, Min 221.5177622071313
+2025-03-12 14:26:23,399 - __main__ - INFO - Epoch 3 Loss: Avg 342.18228269750614, Med 245.56580134653672, Min 214.03196343046702
+2025-03-12 14:27:26,877 - __main__ - INFO - Epoch 4 Loss: Avg 318.23192357042774, Med 240.6641448511037, Min 220.90870538687042
+2025-03-12 14:28:30,039 - __main__ - INFO - Epoch 5 Loss: Avg 284.1432038634428, Med 230.6037412817929, Min 220.82749162449986
+2025-03-12 14:29:33,206 - __main__ - INFO - Epoch 6 Loss: Avg 262.3437710920235, Med 227.84966011655214, Min 220.1027877827748
+2025-03-12 14:30:36,361 - __main__ - INFO - Epoch 7 Loss: Avg 271.2426375994737, Med 224.98671946769832, Min 219.67988083259357
+2025-03-12 14:31:39,665 - __main__ - INFO - Epoch 8 Loss: Avg 285.86144515597346, Med 225.6077786435833, Min 219.59332422784925
+2025-03-12 14:32:42,831 - __main__ - INFO - Epoch 9 Loss: Avg 277.8631827093237, Med 223.70619493108492, Min 219.34283791491296
+2025-03-12 14:32:42,902 - __main__ - INFO - 10 best losses: [214.03196343 219.34283791 219.62502587 219.85825744 222.27739965
+ 222.64705864 224.76533123 288.23632276 321.97019931 357.88239848]
+/home/macke/mdeistler57/.conda/envs/jaxley/lib/python3.12/site-packages/jaxley/utils/swc.py:33: UserWarning: Found a soma which consists of a single traced point. `Jaxley` interprets this soma as a spherical compartment with radius specified in the SWC file, i.e. with surface area 4*pi*r*r.
+  warn(
+dt_difference 5.0
+Amplitude stimulus: 0.26999998092651367
+Added 1 external_states. See `.externals` for details.
+Added 1 recordings. See `.recordings` for details.
+2025-03-12 14:33:32,985 - __main__ - INFO - Minimal error: 97.3889
+2025-03-12 14:33:32,985 - __main__ - INFO - ===========
+2025-03-12 14:33:32,985 - __main__ - INFO - Error in spike_count: 1.0000
+2025-03-12 14:33:32,985 - __main__ - INFO - Error in first_spike_time: 0.1000
+2025-03-12 14:33:32,985 - __main__ - INFO - Error in second_spike_time: 32.8250
+2025-03-12 14:33:32,985 - __main__ - INFO - Error in first_spike_amp: 15.1310
+2025-03-12 14:33:32,985 - __main__ - INFO - Error in second_spike_amp: 11.4079
